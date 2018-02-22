@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Install python dependencies via pip3. "
 pip3 install -r requirements.txt
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Installing python3.6"
 sudo yum -y update 
 sudo yum -y install python36
