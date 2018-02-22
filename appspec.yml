@@ -4,9 +4,10 @@ files:
   - source: /
     destination: /home/code
 hooks:
-   AfterInstall:
+  AfterInstall:
     - location: scripts/installpython.sh
       runas: root
+  ApplicationStart:
     - location: scripts/runapp.sh
       runas: root
 
