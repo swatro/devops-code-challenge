@@ -3,4 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/code
+hooks:
+  AfterInstall:
+    - location: scripts/runapp.sh
+      runas: root
 
