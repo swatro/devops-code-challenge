@@ -1,7 +1,12 @@
 #!/bin/bash
+echo "Moving to code directory"
+cd /home/code
 
 echo "Install python dependencies via pip3. "
-/usr/local/bin/pip3 install -r /home/code/requirements.txt
+sudo /usr/local/bin/pip3 install -r requirements.txt
 
 echo "Finished installing dependencies. Running application."
-/usr/local/bin/gunicorn -D /home/code/chocolates_controller.py
+/usr/local/bin/gunicorn -D chocolates_controller.py
+
+echo "Deployment complete moving back"
+cd -
