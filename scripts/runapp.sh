@@ -4,4 +4,4 @@ echo "Install python dependencies via pip3. "
 /usr/local/bin/pip3 install -r /home/code/requirements.txt
 
 echo "Finished installing dependencies. Running application."
-nohup python3 /home/code/chocolates_controller.py &
+/usr/local/bin/gunicorn -D /home/code/chocolates_controller.py
