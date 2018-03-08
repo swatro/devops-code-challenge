@@ -6,9 +6,10 @@ script:
 deploy:
   - provider: codedeploy
     revision_type: github
-    access_key_id: "YOUR AWS ACCESS KEY"
-    secret_access_key: "YOUR AWS SECRET KEY"
-    application: "AwsCodeDeloyApp"
-    deployment_group: "AwsCodeDeloyGroup"
-    region: "us-east-1"
-
+    application: AwsCodeDeloyApp
+    deployment_group: AwsCodeDeloyGroup
+    region: us-east-1
+    secret_access_key:
+      secure: SYAqnaB0NwTckaP9itJE/m1HHrG57JqJy7+DUKiMuq5JF+nZzpvDMIPXzeV7//TPg4sl3pSzt+T87meKP1/UuDQSyUjkSd8gndUuSet4Gc6Xy1gFm52iXJix6fc3oPlSSPZa6FhM0s2sZJSnkgn5nceSZMEE1evza51g/+obP+d9RlQP6FGRbCFpZyS9iAuaDAnJIXtO9yaWR+xfQDikGX/Q6JyvCOEbgWxB/uKPhPEIE8a4r9dKw154L3WMpSFkf9MPMfyOM/UT1zi0gmZibgkMaNRFRV/xWfvD7Rk/1/UjlyMBph+fCyprw8DvYUGF0IVL0LE8YIRZZrWklSHovzOnUOZDQP/4FxGqoBG8g5kbpqoWLM8JKNjR5ZjrWKGm8yBw4qn8FhkkzfsKCn6rw9rwZ6CuEElVpTfZlCjEdbxQfWqw679UeusWBV2cR/uK0mS+XQCZbBYo3s4Gj2xusEvRDimEh9UXD6hQbhDCZq0YMmFjtABv8wNWnM7gCPMtWVjQrmNZPzA/Bi4PXHHoCJjAYJeaHPscHcCDBUK+6G1IJdTpaj9u7j5sm5mp13kiw7xTmKJQc+4ZZNVYpDQMt5McZbHDgolV/6xXo6+c2OVm7+wdY5KOjAGopNQmiWaj4T4lvDb87dEllL4U9IrV3KBJcsNXw5b/LCHbE9yhCO0=
+    access_key_id:
+      secure: K4TOsypRpwpkbJplHHPWqgoqoroKqZV0vWycYg52WfPWPAPVqSiVhw7ixpGam8tQ5hwCH2eYx57Qm25ERw1TSfIv4iyH2zWviaK3d++j53pQxYJzvXWbgwVjueT9soRoQ6CTKW4d7Zy4rVEdHLz1bhmTsm8/HsGFfYOEyULJmUfH6z+jlAtXwJFPT0Ha6zZb5aAHHsMq9MzVv3JYnhMnrRhH3OPu9I1nYDpEwzzCIalZ8sC2Wb9i2DTBwWSPsVTAvvS5h/xxZRwIspXJH2QxjxngkGF6ARFp/I3m8kSYn8X2zN9SkWo2jxqnctdXo6f9O2jg4LrI8kA3Tcgbnargjm5Lpha+OjQjxETGEXfpAlzyfHvBZVAmJNAg+LfYMw1rn1shR6Riru3257JXvSKTmvDGY/OmT6h0a87I4cTM4UsWtKnHi4sgMbMllGkovgHoS8oGE092E0c+sfYE8VARbqEWqJxoXizKxyAGLKG9Okay9GQlsSJgR/d/v7qKLmdqj2N/Jiv6D3KG6aZWeP+nDw1vUA0z6lspe075iQpgEUi0KZ3ayE34hBUkkuUxmYG7CoI4N42i0PLbe5P83sT7NueW+O2XFRFtdnXw1EXrCDZKz5zxRO2yPmVKT/k3TnaMXZTAMvWHKbQQVuEnKG+3o5shEGKL5X4KloIG/3FMq1s=
