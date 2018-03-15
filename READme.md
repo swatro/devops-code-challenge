@@ -1,9 +1,11 @@
 ## Example Codebase for Deployments
 
+
 ### Steps to run locally:
-* Install python 3.6 and pip3
-* Install dependencies: `pip3 install -r requirements.txt`
-* Run the app (in the background): `gunicorn -D chocolates_controller.py`
+* Install docker
+* Build container: `docker build . -t choco`
+* Run the container: `docker run -p 5000:5000 -d choco`
+* Application will be running at localhost:5000
 
 ### Scripts in the repo for running with AWS CodeDeploy:
 * `appspec.yml` defines the step for the AWS deploy. 
